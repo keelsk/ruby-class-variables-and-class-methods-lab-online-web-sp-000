@@ -42,9 +42,7 @@ class Song
   end
   
   def self.genre_count
-    @@genre_count[genre] = [ ] if !(@@genre_count.include?(genre))
-    @genre_count[genre] << @@artist
-    @@genre_count[genre] = genre.length
+    
   end
   
 end
