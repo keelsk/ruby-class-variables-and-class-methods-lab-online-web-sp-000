@@ -43,7 +43,7 @@ class Song
   
   def self.genre_count
     new_array = @@genres.collect do |genre|
-      @@genres.include?(genre)
+      genre.count()
     end
     new_array
   end
