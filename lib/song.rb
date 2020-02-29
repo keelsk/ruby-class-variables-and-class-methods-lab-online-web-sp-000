@@ -42,11 +42,12 @@ class Song
   end
   
   def self.genre_count
-    new_array = @@unique_genres.collect do |genre|
+    new_array = @@unique_genres.each_with_index.collect do |genre, i|
       @@genres.count(genre)
+      @@genre_count[genre] = new_array[i]
       
     end
-    new_array
+    @@genre_count
   end
   
 end
