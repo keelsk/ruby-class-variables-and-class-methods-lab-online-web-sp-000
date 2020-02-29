@@ -42,7 +42,7 @@ class Song
   end
   
   def self.genre_count
-    new_array = @@genres.collect do |genre|
+    new_array = @@unique_genres.collect do |genre|
       @@genres.count(genre)
     end
     new_array
