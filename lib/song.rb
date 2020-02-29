@@ -49,7 +49,7 @@ class Song
   end
   
   def self.genre_count
-    new_array_@@unique_artists.collect do |artist|
+    new_array=@@unique_artists.collect do |artist|
       @@artist_count[artist] = @@artists.count(artist)
     end
     @@artist_count
