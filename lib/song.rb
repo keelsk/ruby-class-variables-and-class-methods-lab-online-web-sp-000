@@ -42,9 +42,10 @@ class Song
   end
   
   def self.genre_count
-    @@genres.select do |genre|
+    new_array = @@genres.select do |genre|
       @@genres.include?(genre)
     end
+    new_array
   end
   
 end
